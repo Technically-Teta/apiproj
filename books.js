@@ -85,7 +85,7 @@ const BOOKS = [{
   },
   {
     id: 13,
-    title: "The Mystic Mirror",
+    title: "The Secret Mirror",
     author: "Ava Taylor",
     hometown: "Atlanta",
     married: true,
