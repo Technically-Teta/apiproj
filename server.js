@@ -24,10 +24,17 @@ app.get('/books', (req,res)=>{
     res.json(BOOKS)
 })
 
-// GET REQUEST VIA ID
+// GET REQUEST VIA ID// REQUEST PARAMS SEARCHES THE URL FOR THE REQUESTED ID
 app.get('/books/id',(req, res) => { 
     const {id} = req.params;
     console.log(id);
+
+
+    const book = BOOKS.find(book => book.id ===id);
+    if(!book){
+        res.status(404).send('Sorry go ask someone else, That book is not here!')
+    }
+    res.json(book)
 })
 
 
