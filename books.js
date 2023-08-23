@@ -93,7 +93,7 @@ const BOOKS = [{
   {
     id: 14,
     title: "Voices in the Wind",
-    author: "Noah Wilson",
+    author: "Noah Stilson",
     hometown: "Phoenix",
     married: false,
   },
