@@ -15,7 +15,7 @@ const BOOKS = [{
   },
   {
     id: 3,
-    title: "Whispers of the Past",
+    title: "Whispers of the Day",
     author: "Sarah Williams",
     hometown: "Boston",
     married: true,
