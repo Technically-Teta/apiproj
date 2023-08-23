@@ -1,5 +1,11 @@
 // importing express.js module
 const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const BOOKS = require('./books.js');
+
+
+
 //create an object of the express module
 const app = express();
 //set the port to 3000
