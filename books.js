@@ -51,7 +51,7 @@ const BOOKS = [{
   {
     id: 8,
     title: "Under the Starlit Sky",
-    author: "William Smith",
+    author: "Silliam Smith",
     hometown: "New York",
     married: false,
   },
