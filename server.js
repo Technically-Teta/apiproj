@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
     res.send("Welcome to Samelias Api")
 })
 
+//pwd 
+//const _dirname = path.resolve
 
 // make the server listen on port number
 app.listen(port, () => {
