@@ -19,10 +19,15 @@ app.get('/', (req, res) => {
     res.send("Welcome to Samelias Api")
 })
 
+app.get('/books', (req,res)=>{
+    res.json(BOOKS)
+})
+
+
 //pwd 
 const _dirname = path.resolve
 
-// make the server listen on port number
+// make the gitserver listen on port number
 app.listen(port, () => {
   console.log(`apiproj app listening on port ${port}`);
 });
