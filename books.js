@@ -92,7 +92,7 @@ const BOOKS = [{
   },
   {
     id: 14,
-    title: "Voices in the Wind",
+    title: "Boys in the Wind",
     author: "Noah Stilson",
     hometown: "Phoenix",
     married: false,
