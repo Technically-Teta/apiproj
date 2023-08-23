@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 
 //pwd 
-//const _dirname = path.resolve
+const _dirname = path.resolve
 
 // make the server listen on port number
 app.listen(port, () => {
