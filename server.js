@@ -1,8 +1,8 @@
 // importing express.js module
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const BOOKS = require('./books.js');
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import BOOKS from './books';
 
 
 
