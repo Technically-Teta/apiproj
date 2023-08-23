@@ -36,7 +36,7 @@ const BOOKS = [{
   },
   {
     id: 6,
-    title: "Lost in the Clouds",
+    title: "In the Clouds",
     author: "Michael Brown",
     hometown: "Seattle",
     married: false,
