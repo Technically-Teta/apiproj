@@ -19,12 +19,21 @@ app.get('/', (req, res) => {
     res.send("Welcome to Samelias Api")
 })
 
+// GET REQUEST
 app.get('/books', (req,res)=>{
     res.json(BOOKS)
 })
 
+// GET REQUEST VIA ID
+app.get('/books/id',(req, res) => { 
+    const {id} = req.params;
+    console.log(id);
+})
 
-//pwd 
+
+
+
+//pwd Middleware shows what path express is on
 const _dirname = path.resolve
 
 // make the gitserver listen on port number
