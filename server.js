@@ -31,6 +31,16 @@ app.get('/books/id',(req, res) => {
     const bookFinder = books.find((book) => books.id ===id);
     res.send(bookFinder);
 
+// DELETE A BOOK FROM THE ARRAY // delete the book that proves to be false 
+app.delete('/:id', (req, res)=>{
+    const {id} = req.params;
+    bookDel = books.filter((user)=>book.id != id);
+    res.send(`the book with the id:${id} has been deleted.`)
+
+})  
+
+
+
  // Creates an object of recognized users of the site. 
 const users =[ 
     {id:1, name:'Tommy Smith',  title: 'Grand Reader'},
