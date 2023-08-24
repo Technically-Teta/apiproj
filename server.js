@@ -4,7 +4,7 @@ import cors from 'cors';
 import path from 'path';
 import BOOKS from './books';
 
-
+// do I need to create an empty arry for the deleted book id's?
 
 //create an object of the express module
 const app = express();
@@ -53,7 +53,18 @@ app.get('/users',(req,res)=>{
     res.json(users);
 });
 
-//DELETE REQUEST TO DELETE USERS
+//POST AN UPDATE TO THE BODY OF THE HOME PAGE:
+app.post('/' ,(req, res) => {
+Body -
+
+{
+  "Site Launch": {
+    "Date": // date obj
+    "time": //date time obj
+  }
+}
+
+});
 
 
 
