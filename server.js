@@ -34,6 +34,13 @@ app.get("/api/books", (req, res) => {
     res.json(BOOKS);
   });    
 
+ // Creates an object of recognized users of the site. 
+const users =[ 
+    {id:1, name:'Tommy Smith',  title: 'Grand Reader'},
+    {id:2, name:'Joe Torry', title:'Solo Champion Reader'},
+    {id:3, name:'Marlo Jackson', title: 'Elite Reader'}
+
+];
 
 
 
