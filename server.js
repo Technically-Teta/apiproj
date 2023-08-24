@@ -41,7 +41,10 @@ const users =[
     {id:3, name:'Marlo Jackson', title: 'Elite Reader'}
 
 ];
-
+//Defines the route that uses the hardcoded data.
+app.get('/users',(req,res)=>{
+    res.json(users);
+});
 
 
     const book = BOOKS.find(book => book.id ===id);
