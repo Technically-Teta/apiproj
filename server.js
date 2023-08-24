@@ -19,20 +19,16 @@ app.get('/', (req, res) => {
     res.send("Welcome to Samelias Api")
 })
 
-// GET REQUEST
+// GET REQUEST FOR BOOKS // //creates an endpoint for the route 
 app.get('/books', (req,res)=>{
+    console.log('This works')
     res.json(BOOKS)
 })
 
-// GET REQUEST VIA ID// REQUEST PARAMS SEARCHES THE URL FOR THE REQUESTED ID
+// GET REQUEST VIA ID FOR BOOKS// REQUEST PARAMS SEARCHES THE URL FOR THE REQUESTED ID
 app.get('/books/id',(req, res) => { 
     const {id} = req.params;
     console.log(id);
-
-// //creates an endpoint for the route `/api/books` that prints all the books
-app.get("/api/books", (req, res) => {
-    res.json(BOOKS);
-  });    
 
  // Creates an object of recognized users of the site. 
 const users =[ 
@@ -41,7 +37,7 @@ const users =[
     {id:3, name:'Marlo Jackson', title: 'Elite Reader'}
 
 ];
-//Defines the route that uses the hardcoded data.
+//GET REQUEST TO SHOW USERS //Defines the route that uses the hardcoded data.
 app.get('/users',(req,res)=>{
     res.json(users);
 });
