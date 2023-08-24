@@ -28,7 +28,8 @@ app.get('/books', (req,res)=>{
 // GET REQUEST VIA ID FOR BOOKS// REQUEST PARAMS SEARCHES THE URL FOR THE REQUESTED ID
 app.get('/books/id',(req, res) => { 
     const {id} = req.params;
-    console.log(id);
+    const bookFinder = books.find((book) => books.id ===id);
+    res.send(bookFinder);
 
  // Creates an object of recognized users of the site. 
 const users =[ 
@@ -41,6 +42,10 @@ const users =[
 app.get('/users',(req,res)=>{
     res.json(users);
 });
+
+//DELETE REQUEST TO DELETE USERS
+
+
 
 
     const book = BOOKS.find(book => book.id ===id);
