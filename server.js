@@ -29,6 +29,13 @@ app.get('/books/id',(req, res) => {
     const {id} = req.params;
     console.log(id);
 
+// //creates an endpoint for the route `/api/books` that prints all the books
+app.get("/api/books", (req, res) => {
+    res.json(BOOKS);
+  });    
+
+
+
 
     const book = BOOKS.find(book => book.id ===id);
     if(!book){
